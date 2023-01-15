@@ -60,11 +60,12 @@ Resources:
             apt-get install -y  unzip >> log_unzip.txt
             apt-get install -y nodejs >> log_node.txt
             apt install -y npm >>log_npm.txt
-            wget https://github.com/NguyenTienDung21/taskD/archive/refs/heads/master.zip
+            wget https://github.com/s3911417/TaskD/archive/refs/heads/master.zip
             unzip master.zip
-            cd taskD-master
+            cd TaskD-master
             npm i . >> install_log.txt
-            node migrations.js
+            export AWS_ACCESS_KEY_ID=ASIA4PFSTT6DDHRZG3G5
+            export AWS_SECRET_ACCESS_KEY=8HbNm3ZwSRVBqXkOwCAkRc0/vM/FPf/ZOHR9fPRe
             npm start
 
   WebServerAutoScalingGroup:
